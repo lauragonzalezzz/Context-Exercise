@@ -1,3 +1,5 @@
+
+'use strict'
 var Robot = function (name) {
   this.name = name;
 
@@ -17,14 +19,15 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
+//console.log(add(0,1));
 
 // #2  
-console.log(  );
+console.log(add.call(voltron, 2, 3)  );
 
 // #3
-console.log(  );
+console.log(add.apply(optimus, [20, 30])  );
 
 // #4
 
-console.log(  );
+let calculate = add.bind(bender, "drinking ", "beer");
+console.log(calculate());
